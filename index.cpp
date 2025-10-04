@@ -14,4 +14,5 @@ int main() {
     int ball_radius = 15;
 
     cout << "Starting the game..." << endl;
+    
 }
