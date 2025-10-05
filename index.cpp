@@ -16,3 +16,18 @@ int main() {
     cout << "Starting the game..." << endl;
     
 }
+
+int player_score = 0;
+int opponent_score = 0;
+
+class Ball {
+    public:
+        int x, y;
+        int speed_x, speed_y;
+        int radius;
+
+        void Draw() {
+            DrawCircle(x, y, radius, WHITE);
+        }
+        )
+}
