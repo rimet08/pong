@@ -36,5 +36,6 @@ class Ball {
 
             if (y + radius >= GetScreenHeight() || y - radius <=0) { speed_y = *= -1;}
         }
-        )
+        
+            if (x + radius >= GetScreenWidth()) {cpu_score++; ResetBall();}
 }
