@@ -38,4 +38,6 @@ class Ball {
         }
         
             if (x + radius >= GetScreenWidth()) {cpu_score++; ResetBall();}
+
+            if (x - radius <= 0) {player_score++; ResetBall();}
 }
