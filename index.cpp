@@ -49,3 +49,15 @@ class Ball {
             speed x *= speed_choices[GetRandomValue(0, 1)];
             speed y *= speed_choices[GetRandomValue(0, 1)];
 };
+
+class Paddle {
+    protected:
+        void LimitMovement() {
+            if (y <=0) {
+                y = 0;
+            }
+            if (y + height >= GetScreenHeight()) {
+                y = GetScreenHeight() - height;
+            }
+        }
+}
