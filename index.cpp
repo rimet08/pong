@@ -40,4 +40,12 @@ class Ball {
             if (x + radius >= GetScreenWidth()) {cpu_score++; ResetBall();}
 
             if (x - radius <= 0) {player_score++; ResetBall();}
-}
+
+        void ResetBall() {
+            x = GetScreenWidth() / 2;
+            y = GetScreenHeight() / 2;
+
+            int speed_choices[2] = {-1, 1};
+            speed x *= speed_choices[GetRandomValue(0, 1)];
+            speed y *= speed_choices[GetRandomValue(0, 1)];
+};
