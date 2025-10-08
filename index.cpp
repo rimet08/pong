@@ -68,5 +68,5 @@ public:
     int speed;
 
     void Draw() {
-        DrawRectangleRounded()
+        DrawRectangleRounded(Rectangle{x, y, width, height}, 0.8, 0, WHITE);
     }
