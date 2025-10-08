@@ -61,3 +61,12 @@ class Paddle {
             }
         }
 }
+
+public:
+    int x, y;
+    int width, height;
+    int speed;
+
+    void Draw() {
+        DrawRectangleRounded()
+    }
