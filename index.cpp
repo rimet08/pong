@@ -70,3 +70,13 @@ public:
     void Draw() {
         DrawRectangleRounded(Rectangle{x, y, width, height}, 0.8, 0, WHITE);
     }
+
+    void Update() {
+        if (IsKeyDown(KEY_UP)) {
+            y -= speed;
+        }
+        if (IsKeyDown(KEY_DOWN)) {
+            y += speed;
+        }
+        LimitMovement();
+    }
