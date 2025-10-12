@@ -79,4 +79,10 @@ public:
             y += speed;
         }
         LimitMovement();
+
+    }
+
+    class CpuPaddle : public Paddle {
+        public:
+            void update(int ball_y())
     }
