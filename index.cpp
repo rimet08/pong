@@ -84,5 +84,13 @@ public:
 
     class CpuPaddle : public Paddle {
         public:
-            void update(int ball_y())
+            void Update(int ball_y) {
+                if (y + height / 2 > ball_y) {
+                    y = y - speed;
+                }
+                if (y + height / 2 <= ball_y) {
+                    y = y + speed;
+                }
+                LimitMovement();
+            }
     }
