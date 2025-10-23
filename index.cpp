@@ -93,4 +93,14 @@ public:
                 }
                 LimitMovement();
             }
-    }
+    };
+
+Ball ball;
+Paddle player;
+CpuPaddle cpu;
+
+int main() {
+    std::cout << "Starting the game" << std::endl;
+    const int screeinWidth = 800;
+    const int screenHeight = 600;
+}
