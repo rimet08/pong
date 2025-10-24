@@ -103,4 +103,17 @@ int main() {
     std::cout << "Starting the game" << std::endl;
     const int screeinWidth = 800;
     const int screenHeight = 600;
+    initwindow(screenWidth, screenHeight, "Pong Game");
+    settargetfps(60);
+    ball.radius = 15;
+    ball.x = screenWidth / 2;
+    ball.y = screenHeight / 2;
+    ball.speed_x = 5;
+    ball.speed_y = 5;
+
+    player.width = 20;
+    player.height = 100;
+    player.x = screenWidth - player.width - 10;
+    player.y = screenHeight / 2 - player.height / 2; 
+
 }
